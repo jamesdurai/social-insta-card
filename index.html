@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet"href="style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <title>Instagram</title>
+</head>
+<body>
+
+    <main>
+        <div class="container-inst">
+            <div class="col">
+                
+          
+                <div class="card-inst">
+                    <div class="top">
+                        <div class="userDetails">
+                            <div class="profilepic">
+                                <div class="profile_img">
+                                    <div class="image">
+                                        <img src="me.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>James Durai
+                                  <br>
+                                  <span>Bengaluru, India</span>
+                          </h3>
+                        </div>
+                        <div>
+                            <span class="dot">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="imgBx">
+                        <img src=
+"c-d-x-PDX_a_82obo-unsplash (1).jpg" 
+                            alt="post-1" class="cover">
+                    </div>
+                    <div class="bottom">
+                        <div class="actionBtns">
+                            <div class="left">
+                                <span class="heart" 
+                                      onclick="toggleLike()">
+                                    
+                                      <i id="likeIcon" class="fa-solid fa-heart fa-2xl"></i>
+                                       
+                                    </span>
+
+                                    <span class="comment" 
+                                    onclick="addlike()">
+                                  
+                                    <i class="fa-sharp fa-regular fa-comment fa-2xl"></i>
+                                     
+                                  </span>
+
+                                  <span class="share">
+                                    <i class="fa-solid fa-share-nodes fa-2xl" onclick="openModal()"></i>
+                                  </span>
+                                  
+                                  <div class="popup" id="popup">
+                                    <h2>Send to:</h2>
+                                    <input type="text" placeholder="Enter recipient" />
+                                    <h2>Select Share Option:</h2>
+                                    <ul>
+                                      <li><a href="#">Copy Link <i class="fa-solid fa-copy"></i></a></li>
+                                      <li><a href="#">Whatsapp <i class="fa-brands fa-whatsapp"></i></a></li>
+                                      <li><a href="#">Facebook <i class="fa-brands fa-facebook"></i></a></li>
+                                      <li><a href="#">Twitter <i class="fa-brands fa-twitter"></i></a></li>
+                                    </ul>
+                                    <button type="button" onclick="closeModal()">OK</button>
+                                  </div>
+                                  
+            
+                                    
+
+                                
+                            </div>
+                            <div class="right">
+                                <div class="toastDiv"></div>
+                                <a class="save" id="liveToastBtn" onclick="showToastfunc()">
+                                    <i class="fa-regular fa-bookmark fa-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                            <p><span id="likeCount1">203</span>  likes</p>
+  
+                        
+                        <span>
+                            <p class="message">
+                              <b>James Durai</b>
+                            </p>
+  
+                        </span>
+                        <span>
+                            <h4 class="comments">View all 32 comments</h4>
+                        </span>
+                        <span>
+                            <h5 class="postTime">2 hours ago</h5>
+                        </span>
+                        <div class="addComments">
+                            <div class="reaction">
+                                <h3>
+                                  <i class="far fa-smile"></i>
+                                </h3>
+                            </div>
+                            <input type="text"
+                                   class="text"
+                                   placeholder="Add a comment...">
+                            <span>Post</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>    
+
+    </main>
+
+    <script src="main.js"></script>
+    <script src="like.js"></script>
+
+</body>
+</html>
